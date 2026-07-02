@@ -1,0 +1,82 @@
+databaseChangeLog:
+  - changeSet:
+      id: 02-insert-test-data
+      author: developer
+      changes:
+        - insert:
+            tableName: hotels
+            columns:
+              - column: {name: name, value: "DoubleTree by Hilton Minsk"}
+              - column: {name: description, value: "The DoubleTree by Hilton Hotel Minsk offers 193 luxurious rooms in the Belorussian capital and stunning views of Minsk city from the hotel's 20th floor ..."}
+              - column: {name: brand, value: "Hilton"}
+              - column: {name: house_number, value: 9}
+              - column: {name: street, value: "Pobediteley Avenue"}
+              - column: {name: city, value: "Minsk"}
+              - column: {name: country, value: "Belarus"}
+              - column: {name: post_code, value: "220004"}
+              - column: {name: phone, value: "+375 17 309-80-00"}
+              - column: {name: email, value: "doubletreeminsk.info@hilton.com"}
+              - column: {name: check_in, value: "14:00"}
+              - column: {name: check_out, value: "12:00"}
+        - insert:
+            tableName: hotel_amenities
+            columns:
+              - column: {name: hotel_id, valueNumeric: 1}
+              - column: {name: amenity, value: "Free parking"}
+        - insert:
+            tableName: hotel_amenities
+            columns:
+              - column: {name: hotel_id, valueNumeric: 1}
+              - column: {name: amenity, value: "Free WiFi"}
+
+        - insert:
+            tableName: hotels
+            columns:
+              - column: {name: name, value: "Renaissance Minsk Hotel"}
+              - column: {name: description, value: "Discover the best of Minsk at Renaissance Minsk Hotel..."}
+              - column: {name: brand, value: "Marriott"}
+              - column: {name: house_number, value: 11}
+              - column: {name: street, value: "Dzerzhinsky Avenue"}
+              - column: {name: city, value: "Minsk"}
+              - column: {name: country, value: "Belarus"}
+              - column: {name: post_code, value: "220036"}
+              - column: {name: phone, value: "+375 17 309-90-90"}
+              - column: {name: email, value: "renaissance.minsk@marriott.com"}
+              - column: {name: check_in, value: "15:00"}
+              - column: {name: check_out, value: "12:00"}
+        - insert:
+            tableName: hotel_amenities
+            columns:
+              - column: {name: hotel_id, valueNumeric: 2}
+              - column: {name: amenity, value: "Fitness center"}
+        - insert:
+            tableName: hotel_amenities
+            columns:
+              - column: {name: hotel_id, valueNumeric: 2}
+              - column: {name: amenity, value: "Free WiFi"}
+
+        - insert:
+            tableName: hotels
+            columns:
+              - column: {name: name, value: "Marriott Moscow Grand Hotel"}
+              - column: {name: description, value: "Luxury hotel in the heart of Moscow..."}
+              - column: {name: brand, value: "Marriott"}
+              - column: {name: house_number, value: 26}
+              - column: {name: street, value: "Tverskaya Street"}
+              - column: {name: city, value: "Moscow"}
+              - column: {name: country, value: "Russia"}
+              - column: {name: post_code, value: "125009"}
+              - column: {name: phone, value: "+7 495 937-00-00"}
+              - column: {name: email, value: "moscow.grand@marriott.com"}
+              - column: {name: check_in, value: "14:00"}
+              - column: {name: check_out, value: "12:00"}
+        - insert:
+            tableName: hotel_amenities
+            columns:
+              - column: {name: hotel_id, valueNumeric: 3}
+              - column: {name: amenity, value: "Room service"}
+        - insert:
+            tableName: hotel_amenities
+            columns:
+              - column: {name: hotel_id, valueNumeric: 3}
+              - column: {name: amenity, value: "Fitness center"}
